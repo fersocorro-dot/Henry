@@ -1,0 +1,7 @@
+# Excluir todo por defecto
+*
+
+# Permitir solo los archivos de configuración de comportamiento
+!CLAUDE.md
+!voz-y-tono.md
+!.gitignore
