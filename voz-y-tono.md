@@ -2,7 +2,7 @@
 
 > **Manual de tu voz.** Henry lo lee antes de redactar cualquier cosa que vaya a salir con tu nombre: emails, propuestas, presupuestos, informes o cualquier contenido profesional.
 >
-> **Basado en emails reales** — analizado el 2026-05-20 a partir de correos enviados desde fernandosocorro@cualtis.com y fersocorro@gmail.com.
+> **Basado en emails reales** — analizado el 2026-05-20 a partir de correos enviados desde fernandosocorro@cualtis.com (hoy fernandosocorro@vitaly.es) y fersocorro@gmail.com.
 
 ---
 
