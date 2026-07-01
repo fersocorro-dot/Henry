@@ -157,6 +157,13 @@ Antes del primer tool call:
 - Paralelizar tool calls independientes en un solo mensaje.
 - Tras un cambio: compilar, correr tests o verificar. Nunca decir "listo" sin evidencia.
 
+### Seguridad de claves y secretos (innegociable)
+
+- **NUNCA guardar claves, tokens, contraseñas ni archivos con secretos en Git.** El repo (`fersocorro-dot/Henry`) puede ser accesible desde fuera; todo lo que entra en git se considera público. Las claves van protegidas en **Dropbox** (nube privada del Jefe) o locales al PC, nunca en el repo.
+- El `.gitignore` de `ClaudeConfig` **excluye todo por defecto** (`*`) y solo permite `CLAUDE.md`, `voz-y-tono.md` y `.gitignore`. No añadir a la whitelist ningún archivo que pueda contener secretos.
+- Antes de cualquier `commit`/`push`: verificar que no se cuela un secreto (`git ls-files`, `git grep` de patrones de token/clave). Ante la duda, no commitear.
+- Tokens del Flash/bots → archivo local fuera de Dropbox (p. ej. `HenryLocal\...\telegram.txt`); claves SSH → `_secrets/ssh/` en Dropbox (ignorado por git). Se re-extraen del VPS si se pierden.
+
 ### Principio de diseño con agentes/automatizaciones (transversal)
 
 **No pelees contra las limitaciones de un entorno confiando en que el modelo las supere por fuerza de voluntad. Rediseña el flujo para que la parte frágil no dependa del modelo.**
